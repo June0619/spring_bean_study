@@ -12,8 +12,11 @@ public class MyLogger {
     private HttpServletRequest request;
 
     public void setRequest(HttpServletRequest request) {
-        uuid = UUID.randomUUID().toString();
         this.request = request;
+    }
+
+    public void setUuid() {
+        this.uuid = UUID.randomUUID().toString();
     }
 
     public void log() {
