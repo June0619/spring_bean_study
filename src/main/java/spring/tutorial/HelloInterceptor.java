@@ -13,6 +13,7 @@ public class HelloInterceptor implements HandlerInterceptor {
 
     public HelloInterceptor(MyLogger myLogger) {
         this.myLogger = myLogger;
+        System.out.println(myLogger.getClass());
     }
 
     @Override
