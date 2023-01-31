@@ -15,6 +15,7 @@ public class HelloConfigurer implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(helloInterceptor);
+        registry.addInterceptor(helloInterceptor)
+                .addPathPatterns("/hello");
     }
 }
