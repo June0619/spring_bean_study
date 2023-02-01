@@ -19,7 +19,6 @@ public class HelloInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         myLogger.setRequest(request);
-        myLogger.setUuid();
         myLogger.log();
         return true;
     }
